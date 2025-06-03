@@ -9,7 +9,7 @@ import Swal from "sweetalert2";
 interface LoginFormValues {
   email: string;
   password: string;
-  // remember?: boolean;
+  // remember?: boolean;.
 }
 
 const Login: React.FC = () => {
