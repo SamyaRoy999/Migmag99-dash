@@ -4,7 +4,6 @@ import { Button, Checkbox, Form, Input } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import ArtistLibrary from "../assets/Images/dashboard/Artist Library@4x 1.png";
 import { usePostLoginInfoMutation } from "../redux/dashboardFeatures/user/userApiSlices";
-import toast from "react-hot-toast";
 import Swal from "sweetalert2";
 
 interface LoginFormValues {
@@ -207,15 +206,6 @@ const Login: React.FC = () => {
               </Button>
             </Form.Item>
           </Form>
-          <p className="font-degular font-normal text-sm text-center">
-            Don’t have an account?{" "}
-            <Link
-              to={"/auth/register"}
-              className="font-degular text-base font-bold"
-            >
-              Register
-            </Link>
-          </p>
         </AuthWrapper>
       </div>
     </div>

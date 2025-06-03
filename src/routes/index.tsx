@@ -17,7 +17,6 @@ import ForgetPassword from "../pages/ForgetPassword";
 import Hero from "../pages/Hero";
 import Transactions from "../pages/Transactions";
 import Categories from "../pages/Categories";
-import Register from "../pages/register";
 import Order from "../pages/Order";
 
 const handleNotifications = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -78,10 +77,6 @@ const router = createBrowserRouter([
       {
         path: "/auth",
         element: <Login />,
-      },
-      {
-        path: "/auth/register",
-        element: <Register />,
       },
       {
         path: "/auth/login",
